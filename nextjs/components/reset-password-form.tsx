@@ -26,8 +26,8 @@ const ResetPasswordForm = () => {
       .then(() => {
         '再設定用のメールを送信しました。メールのリンクをクリックしてください。';
         router.push({
-          pathname: router.query.id as string,
           query: {
+            id: router.query.id,
             view: 'login',
           },
         });
@@ -74,11 +74,13 @@ const ResetPasswordForm = () => {
           パスワードがわかる方は
           <Link
             href={{
-              pathname: router.query.id as string,
               query: {
+                id: router.query.id,
                 view: 'login',
               },
             }}
+            replace
+            shallow
           >
             <a className="text-pink-500">ログイン</a>
           </Link>
@@ -87,11 +89,13 @@ const ResetPasswordForm = () => {
           まだアカウントをお持ちでない方は
           <Link
             href={{
-              pathname: router.query.id as string,
               query: {
+                id: router.query.id,
                 view: 'register',
               },
             }}
+            replace
+            shallow
           >
             <a className="text-pink-500">アカウント登録</a>
           </Link>

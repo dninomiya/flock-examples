@@ -34,8 +34,8 @@ const PasswordForm = () => {
       updatePassword(firebaseUser, password)
         .then(() => {
           router.push({
-            pathname: router.query.id as string,
             query: {
+              id: router.query.id,
               view: 'login',
             },
           });
@@ -102,11 +102,13 @@ const PasswordForm = () => {
         アカウントをお持ちの方は
         <Link
           href={{
-            pathname: router.query.id as string,
             query: {
+              id: router.query.id,
               view: 'login',
             },
           }}
+          replace
+          shallow
         >
           <a className="text-pink-500">ログイン</a>
         </Link>

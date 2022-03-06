@@ -73,8 +73,8 @@ const GuideDemoAndSourceViewer = ({ guide, demoExists, sources }: Props) => {
                 shallow
                 replace
                 href={{
-                  pathname: router.query.id as string,
                   query: {
+                    ...router.query,
                     file: fileName,
                   },
                 }}

@@ -87,11 +87,13 @@ const EmailPasswordLogin = () => {
           パスワードを忘れた方は
           <Link
             href={{
-              pathname: router.query.id as string,
               query: {
+                id: router.query.id,
                 view: 'reset-password',
               },
             }}
+            replace
+            shallow
           >
             <a className="text-pink-500">パスワードを再設定</a>
           </Link>
@@ -100,11 +102,13 @@ const EmailPasswordLogin = () => {
           まだアカウントをお持ちでない方は
           <Link
             href={{
-              pathname: router.query.id as string,
               query: {
+                id: router.query.id,
                 view: 'register',
               },
             }}
+            replace
+            shallow
           >
             <a className="text-pink-500">アカウント登録</a>
           </Link>
