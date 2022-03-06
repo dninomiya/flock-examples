@@ -14,20 +14,23 @@ const ManageRecord = () => {
   const { register, handleSubmit, reset } = useForm<FormValue>();
 
   const submit = (post: FormValue) => {
-    const newPostRef = doc(collection(db, 'posts'));
+    // NOTE: 送信されないようコメントアウトしています
+    // const newPostRef = doc(collection(db, 'posts'));
+    // return setDoc(newPostRef, {
+    //   ...post,
+    //   createdAt: Date.now(),
+    //   id: newPostRef.id,
+    // } as Post).then(() => {
+    //   alert('送信しました。数分以内に検索結果に反映されます。');
+    //   reset();
+    // });
 
-    return setDoc(newPostRef, {
-      ...post,
-      createdAt: Date.now(),
-      id: newPostRef.id,
-    } as Post).then(() => {
-      alert('送信しました。数分以内に検索結果に反映されます。');
-      reset();
-    });
+    alert('送信しました。数分以内に検索結果に反映されます。');
   };
 
   return (
     <form className="space-y-4" onSubmit={handleSubmit(submit)}>
+      <p className="opacity-60">これはデモなので実際に記事は作成されません。</p>
       <h2 className="font-bold text-xl">記事を投稿</h2>
       <div>
         <label>
