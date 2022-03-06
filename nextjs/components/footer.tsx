@@ -1,4 +1,3 @@
-import { format } from 'date-fns';
 import Link from 'next/link';
 import React from 'react';
 import { HiExternalLink } from 'react-icons/hi';
@@ -73,7 +72,7 @@ const Footer = () => {
           <SiGithub />
         </a>
       </div>
-      <p className="text-gray-600">&copy; {format(new Date(), 'yyyy')} Flock</p>
+      <p className="text-gray-600">&copy; {new Date().getFullYear()} Flock</p>
     </footer>
   );
 };
