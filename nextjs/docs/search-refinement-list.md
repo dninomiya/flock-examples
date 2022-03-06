@@ -1,0 +1,1 @@
+デフォルトでは選択した条件が一番上にソートされますが[ダッシュボードから並び順を指定する](https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/facet-display/react/#configuring-your-facet-display-using-the-dashboard)ことで条件の順序が固定されます。
