@@ -91,6 +91,17 @@ export const AuthCategory: Category = {
       ],
     },
     {
+      id: 'api-auth-guard',
+      title: 'API認証',
+      sources: ['demos/api-auth-guard.tsx', 'pages/api/auth-valid.ts'],
+      docs: [
+        {
+          title: '',
+          url: 'https://firebase.google.com/docs/auth/admin/verify-id-tokens?hl=ja',
+        },
+      ],
+    },
+    {
       id: 'apple-login',
       title: 'Appleログイン',
       docs: [
@@ -113,10 +124,6 @@ export const AuthCategory: Category = {
     {
       id: 'discord-login',
       title: 'Discordログイン',
-    },
-    {
-      id: 'api-auth-guard',
-      title: 'API認証',
     },
   ],
 };
