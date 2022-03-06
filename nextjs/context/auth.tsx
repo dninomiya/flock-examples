@@ -27,7 +27,7 @@ export const AuthProvider: FC = ({ children }) => {
       if (fbUser) {
         const userDoc = doc(db, `users/${fbUser.uid}`);
         unsubscribeUser = onSnapshot(userDoc, (snap) => {
-          setUser(snap.data() as User);
+          setUser((snap.data() as User) || null);
           fbUser?.getIdToken(true);
         });
       } else if (fbUser === null) {
