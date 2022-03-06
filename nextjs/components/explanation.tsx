@@ -24,6 +24,7 @@ import { HiOutlineClipboard } from 'react-icons/hi';
 import DocLink from './doc-link';
 import DocAlert from './doc-alert';
 import DocHeading from './doc-heading';
+import DocDetails from './doc-details';
 
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('jsx', jsx);
@@ -44,10 +45,10 @@ const Explanation = ({ markdown }: Props) => {
     <div>
       <ReactMarkdown
         remarkPlugins={[
-          remarkBreaks,
           remarkGfm,
           remarkDirective,
           remarkDirectiveRehype,
+          remarkBreaks,
         ]}
         rehypePlugins={[slug, rehypeAutolinkHeadings]}
         className="prose prose-pre:p-0 dark:prose-invert"
@@ -72,6 +73,7 @@ const Explanation = ({ markdown }: Props) => {
           ['info' as keyof JSX.IntrinsicElements]: DocAlert,
           ['warning' as keyof JSX.IntrinsicElements]: DocAlert,
           ['important' as keyof JSX.IntrinsicElements]: DocAlert,
+          ['details' as keyof JSX.IntrinsicElements]: DocDetails,
           h1: DocHeading,
           h2: DocHeading,
           h3: DocHeading,
