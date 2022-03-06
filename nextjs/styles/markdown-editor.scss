@@ -1,0 +1,44 @@
+.EasyMDEContainer {
+  .editor-toolbar {
+    @apply bg-white;
+    @apply border-slate-300;
+  }
+
+  div.CodeMirror {
+    @apply border-slate-300;
+  }
+
+  .editor-toolbar button {
+    @apply text-slate-500;
+  }
+}
+
+.dark {
+  .editor-toolbar {
+    @apply bg-slate-800;
+    @apply border-slate-400;
+    .separator {
+      @apply border-slate-700;
+    }
+  }
+
+  div.CodeMirror {
+    @apply text-white;
+    @apply bg-slate-900;
+    @apply border-slate-400;
+  }
+
+  .CodeMirror-focused div.CodeMirror-selected,
+  .CodeMirror-selected {
+    @apply bg-slate-800;
+  }
+
+  .cm-s-easymde .CodeMirror-cursor {
+    @apply border-slate-400;
+  }
+
+  .editor-toolbar button.active,
+  .editor-toolbar button:hover {
+    @apply bg-slate-900;
+  }
+}

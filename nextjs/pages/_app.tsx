@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 import { AuthProvider } from '../context/auth';
 import { Site } from '../lib/site';
-import '../styles/globals.css';
+import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
