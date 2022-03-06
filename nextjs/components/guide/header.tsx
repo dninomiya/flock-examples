@@ -11,15 +11,7 @@ type Props = {
 const GuideHeader = ({ guide }: Props) => {
   const router = useRouter();
   const back = () => {
-    const refHost = document.referrer
-      ? new URL(document.referrer).hostname
-      : null;
-
-    if (refHost?.match(location.hostname)) {
-      router.back();
-    } else {
-      router.push('/');
-    }
+    router.back();
   };
 
   return (
