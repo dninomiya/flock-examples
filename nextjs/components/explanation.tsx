@@ -92,8 +92,10 @@ const Explanation = ({ markdown }: Props) => {
           },
           code({ node, inline, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
-            const fileName = className?.split(':')?.[1];
-            return !inline && match ? (
+            const fileName = className?.split(':')?.[1] || '';
+            return inline ? (
+              <code {...props}>{children}</code>
+            ) : (
               <div>
                 <div className="flex items-center justify-between bg-[#323233] text-sm py-2 px-3 text-white">
                   <span className="opacity-60">{fileName}</span>
@@ -112,7 +114,7 @@ const Explanation = ({ markdown }: Props) => {
                 </div>
                 <SyntaxHighlighter
                   style={vscDarkPlus}
-                  language={match[1]}
+                  language={match?.[1] || 'plane'}
                   PreTag="div"
                   customStyle={{ margin: 0 }}
                   {...props}
@@ -120,8 +122,6 @@ const Explanation = ({ markdown }: Props) => {
                   {String(children).replace(/\n$/, '')}
                 </SyntaxHighlighter>
               </div>
-            ) : (
-              <code {...props}>{children}</code>
             );
           },
         }}
