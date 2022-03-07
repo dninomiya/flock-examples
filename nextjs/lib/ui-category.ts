@@ -172,6 +172,80 @@ export const UiCategory: Category = {
       ],
     },
     {
+      id: 'markdown-render',
+      title: 'マークダウンレンダー',
+      sources: [
+        'demos/markdown-render.tsx',
+        'components/doc-alert.tsx',
+        'components/doc-heading.tsx',
+      ],
+      libraries: [
+        {
+          title: 'react-markdown',
+          url: 'https://www.npmjs.com/package/react-markdown',
+        },
+        {
+          title: 'react-syntax-highlighter',
+          url: 'https://www.npmjs.com/package/react-syntax-highlighter',
+        },
+        {
+          title: 'rehype-slug',
+          url: 'https://www.npmjs.com/package/rehype-slug',
+        },
+        {
+          title: 'remark-breaks',
+          url: 'https://www.npmjs.com/package/remark-breaks',
+        },
+        {
+          title: 'remark-directive',
+          url: 'https://www.npmjs.com/package/remark-directive',
+        },
+        {
+          title: 'remark-directive-rehype',
+          url: 'https://www.npmjs.com/package/remark-directive-rehype',
+        },
+        {
+          title: 'remark-gfm',
+          url: 'https://www.npmjs.com/package/remark-gfm',
+        },
+        {
+          title: 'rehype-autolink-headings',
+          url: 'https://www.npmjs.com/package/rehype-autolink-headings',
+        },
+        {
+          title: '@tailwindcss/typography',
+          url: 'https://www.npmjs.com/package/@tailwindcss/typography',
+        },
+      ],
+      docs: [
+        {
+          title: '',
+          url: 'https://github.com/remarkjs/react-markdown',
+        },
+        {
+          title: '',
+          url: 'https://tailwindcss.com/docs/typography-plugin',
+        },
+      ],
+    },
+    {
+      id: 'emoji',
+      title: '絵文字',
+      sources: ['demos/emoji.tsx'],
+      libraries: [
+        {
+          title: 'emoji-mart',
+          url: 'https://github.com/missive/emoji-mart',
+        },
+      ],
+      docs: [
+        {
+          title: '',
+          url: 'https://github.com/missive/emoji-mart',
+        },
+      ],
+    },
+    {
       id: 'virtual-scroll',
       title: 'バーチャルスクロール',
     },
@@ -212,10 +286,6 @@ export const UiCategory: Category = {
       title: 'ツールチップ',
     },
     {
-      id: 'markdown-render',
-      title: 'マークダウンレンダー',
-    },
-    {
       id: 'disclosure',
       title: 'ディスクロージャー',
     },
@@ -242,10 +312,6 @@ export const UiCategory: Category = {
     {
       id: 'push-notification',
       title: 'プッシュ通知',
-    },
-    {
-      id: 'emoji',
-      title: '絵文字',
     },
     {
       id: 'side-nav',

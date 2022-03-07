@@ -18,6 +18,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "easymde": "^2.16.1",
+    "emoji-mart": "^3.0.1",
     "firebase": "^9.6.6",
     "firebase-admin": "^10.0.2",
     "next": "12.0.10",
@@ -55,6 +56,7 @@
   "devDependencies": {
     "@faker-js/faker": "^6.0.0-alpha.6",
     "@tailwindcss/typography": "^0.5.2",
+    "@types/emoji-mart": "^3.0.9",
     "@types/node": "17.0.17",
     "@types/npm": "^7.19.0",
     "@types/open-graph-scraper": "^4.8.1",
