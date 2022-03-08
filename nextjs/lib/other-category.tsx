@@ -51,6 +51,19 @@ export const OtherCategory: Category = {
     {
       id: 'send-mail',
       title: 'メール送信',
+      sources: ['demos/send-mail.tsx', 'pages/api/send-mail.ts'],
+      libraries: [
+        {
+          title: '@sendgrid/mail',
+          url: 'https://www.npmjs.com/package/@sendgrid/mail',
+        },
+      ],
+      docs: [
+        {
+          title: '',
+          url: 'https://docs.sendgrid.com/ja/',
+        },
+      ],
     },
     {
       id: 'mailing-list',
