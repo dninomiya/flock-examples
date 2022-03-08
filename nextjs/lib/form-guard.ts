@@ -5,10 +5,17 @@ export const useFormGuard = (isDirty: boolean) => {
   const router = useRouter();
   const message = '編集内容がリセットされます、本当にページ遷移しますか？';
 
-  const pageChangeHandler = () => {
-    const answer = window.confirm(message);
-    if (!answer) {
-      throw 'routeChange aborted.';
+  const pageChangeHandler = (
+    url: string,
+    { shallow }: { shallow: boolean }
+  ) => {
+    if (!shallow) {
+      const answer = window.confirm(message);
+      if (!answer) {
+        // NOTE: https://github.com/apal21/nextjs-progressbar/issues/70
+        // router.events.emit('routeChangeError');
+        throw 'routeChange aborted.';
+      }
     }
   };
 
@@ -21,6 +28,7 @@ export const useFormGuard = (isDirty: boolean) => {
     if (isDirty) {
       router.events.on('routeChangeStart', pageChangeHandler);
       window.addEventListener('beforeunload', beforeUnloadhandler);
+
       return () => {
         router.events.off('routeChangeStart', pageChangeHandler);
         window.removeEventListener('beforeunload', beforeUnloadhandler);
