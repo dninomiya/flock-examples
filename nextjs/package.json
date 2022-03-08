@@ -10,6 +10,7 @@
   "dependencies": {
     "@algolia/autocomplete-js": "^1.5.3",
     "@headlessui/react": "^1.5.0",
+    "@sendgrid/mail": "^7.6.1",
     "@tailwindcss/forms": "^0.4.0",
     "@tiptap/extension-image": "^2.0.0-beta.27",
     "@tiptap/react": "^2.0.0-beta.108",

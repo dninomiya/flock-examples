@@ -11,6 +11,7 @@ import {
   SiStripe,
   SiSwiper,
   SiTailwindcss,
+  SiTwilio,
 } from 'react-icons/si';
 
 type Props = {
@@ -70,6 +71,9 @@ const ListItem: FC<{ url: string; title: string; icon?: ReactNode }> = ({
     }
     if (url.match('github')) {
       return <SiGithub className="text-[#171515] dark:text-white" />;
+    }
+    if (url.match('sendgrid')) {
+      return <SiTwilio className="text-[#F22F46]" />;
     }
     if (url.match('reactjs')) {
       return <SiReact className="text-[#61DBFB]" />;
