@@ -12,9 +12,10 @@ export const useFormGuard = (isDirty: boolean) => {
     if (!shallow) {
       const answer = window.confirm(message);
       if (!answer) {
-        // NOTE: https://github.com/apal21/nextjs-progressbar/issues/70
-        // router.events.emit('routeChangeError');
-        throw 'routeChange aborted.';
+        router.events.emit('routeChangeError', 'キャンセルされました', url, {
+          shallow,
+        });
+        throw 'キャンセルされました';
       }
     }
   };
