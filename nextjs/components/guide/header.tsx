@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { HiArrowLeft, HiFlag } from 'react-icons/hi';
@@ -10,15 +11,14 @@ type Props = {
 
 const GuideHeader = ({ guide }: Props) => {
   const router = useRouter();
-  const back = () => {
-    router.back();
-  };
 
   return (
     <div className="py-6 flex items-center space-x-6">
-      <button onClick={back}>
-        <HiArrowLeft className="text-2xl" />
-      </button>
+      <Link href="/">
+        <a>
+          <HiArrowLeft className="text-2xl" />
+        </a>
+      </Link>
       <h1 className="font-bold text-xl">{guide.title}</h1>
       <span className="flex-1"></span>
       <a
