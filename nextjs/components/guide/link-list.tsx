@@ -4,6 +4,7 @@ import {
   SiAlgolia,
   SiFirebase,
   SiGithub,
+  SiGoogledomains,
   SiMdnwebdocs,
   SiNextdotjs,
   SiNpm,
@@ -12,6 +13,7 @@ import {
   SiSwiper,
   SiTailwindcss,
   SiTwilio,
+  SiVercel,
 } from 'react-icons/si';
 
 type Props = {
@@ -65,6 +67,12 @@ const ListItem: FC<{ url: string; title: string; icon?: ReactNode }> = ({
     }
     if (url.match('swiper')) {
       return <SiSwiper className="text-[#6332f6]" />;
+    }
+    if (url.match('vercel')) {
+      return <SiVercel className="text-black" />;
+    }
+    if (url.match('domains.google')) {
+      return <SiGoogledomains className="text-[#4285F4]" />;
     }
     if (url.match('npm')) {
       return <SiNpm className="text-[#CC3534]" />;

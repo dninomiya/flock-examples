@@ -47,12 +47,44 @@ export const SeoCategory: Category = {
       ],
     },
     {
-      id: 'analytics',
-      title: 'Google アナリティクス',
+      id: 'ga-events',
+      title: 'GAイベント計測',
+      sources: ['demos/ga-events.tsx'],
+      libraries: [
+        {
+          title: 'firebase',
+          url: 'https://www.npmjs.com/package/firebase',
+        },
+      ],
+      docs: [
+        {
+          title: '',
+          url: 'https://firebase.google.com/docs/analytics/events?hl=ja&platform=web',
+        },
+        {
+          title: '',
+          url: 'https://firebase.google.com/docs/analytics/debugview?hl=ja',
+        },
+      ],
     },
     {
       id: 'custom-domain',
       title: '独自ドメイン',
+      sources: [],
+      docs: [
+        {
+          title: '',
+          url: 'https://domains.google/intl/ja_jp/',
+        },
+        {
+          title: '',
+          url: 'https://vercel.com/docs/concepts/projects/custom-domains',
+        },
+      ],
+    },
+    {
+      id: 'ga-api',
+      title: 'GA API連携',
     },
   ],
 };

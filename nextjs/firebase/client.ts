@@ -1,5 +1,5 @@
 import { initializeApp, getApps } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+import { Analytics, getAnalytics } from 'firebase/analytics';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import { getAuth } from 'firebase/auth';
@@ -9,11 +9,13 @@ const config = JSON.parse(
   process.env.NEXT_PUBLIC_FIREBASE_CLIENT_CONFIG as string
 );
 
+export let ga: Analytics;
+
 if (!getApps()?.length) {
   initializeApp(config);
 
   if (typeof window !== 'undefined' && 'measurementId' in config) {
-    getAnalytics();
+    ga = getAnalytics();
   }
 }
 

@@ -70,6 +70,10 @@ export const OtherCategory: Category = {
       title: 'メールマガジン配信',
     },
     {
+      id: 'google-forms-api',
+      title: 'Google Forms API',
+    },
+    {
       id: 'rss',
       title: 'RSS',
     },
