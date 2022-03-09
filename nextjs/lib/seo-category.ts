@@ -85,6 +85,13 @@ export const SeoCategory: Category = {
     {
       id: 'search-console',
       title: 'Search Console',
+      sources: ['pages/_document.tsx'],
+      docs: [
+        {
+          title: '',
+          url: 'https://developers.google.com/search/docs/beginner/search-console?hl=ja',
+        },
+      ],
     },
     {
       id: 'ga-api',

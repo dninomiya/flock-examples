@@ -8,7 +8,7 @@ export default function Document() {
         <Favicon />
         <meta
           name="google-site-verification"
-          content="w0enkzfN5KeN1Y3qNDYvPMkD1RkrOyB3JIgdewTO-TI"
+          content={process.env.NEXT_PUBLIC_SEARCH_CONSOLE_KEY}
         />
       </Head>
       <body>
