@@ -5,7 +5,6 @@ import {
   InferGetStaticPropsType,
 } from 'next';
 import { NextSeo } from 'next-seo';
-import { useRouter } from 'next/router';
 import ogs from 'open-graph-scraper';
 import * as path from 'path';
 import React from 'react';
