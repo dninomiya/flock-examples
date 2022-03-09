@@ -246,6 +246,11 @@ export const UiCategory: Category = {
       ],
     },
     {
+      id: 'breadcrumbs',
+      title: 'パンくず',
+      sources: ['demos/breadcrumbs.tsx', 'components/breadcrumbs.tsx'],
+    },
+    {
       id: 'virtual-scroll',
       title: 'バーチャルスクロール',
     },
@@ -272,14 +277,6 @@ export const UiCategory: Category = {
     {
       id: 'google-map',
       title: 'Google マップ',
-    },
-    {
-      id: 'router-back',
-      title: '前のページへ戻る',
-    },
-    {
-      id: 'breadcrumbs',
-      title: 'パンくず',
     },
     {
       id: 'tooltip',

@@ -83,6 +83,10 @@ export const SeoCategory: Category = {
       ],
     },
     {
+      id: 'search-console',
+      title: 'Search Console',
+    },
+    {
       id: 'ga-api',
       title: 'GA API連携',
     },

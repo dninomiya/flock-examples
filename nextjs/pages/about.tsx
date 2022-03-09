@@ -1,12 +1,23 @@
 import React from 'react';
 import { HiExternalLink } from 'react-icons/hi';
+import Breadcrumbs from '../components/breadcrumbs';
 import ExternalLink from '../components/external-link';
 import { Site } from '../lib/site';
 
 const About = () => {
   return (
-    <div className="container my-10">
-      <div className="prose dark:prose-invert prose-a:text-pink-600">
+    <div className="container">
+      <div className="mt-4">
+        <Breadcrumbs
+          pages={[
+            {
+              name: 'このサイトについて',
+            },
+          ]}
+        />
+      </div>
+
+      <div className="my-10 prose dark:prose-invert prose-a:text-pink-600">
         <h1>このサイトについて</h1>
         <p>
           Webアプリエンジニアの
