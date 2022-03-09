@@ -251,6 +251,23 @@ export const UiCategory: Category = {
       sources: ['demos/breadcrumbs.tsx', 'components/breadcrumbs.tsx'],
     },
     {
+      id: 'dropzone',
+      title: 'ドロップゾーン',
+      sources: ['demos/dropzone.tsx'],
+      libraries: [
+        {
+          title: 'react-dropzone',
+          url: 'https://www.npmjs.com/package/react-dropzone',
+        },
+      ],
+      docs: [
+        {
+          title: '',
+          url: 'https://react-dropzone.js.org/',
+        },
+      ],
+    },
+    {
       id: 'virtual-scroll',
       title: 'バーチャルスクロール',
     },
@@ -325,10 +342,6 @@ export const UiCategory: Category = {
     {
       id: 'drag-drop',
       title: 'ドラッグ&ドロップ',
-    },
-    {
-      id: 'dropzone',
-      title: 'ドロップゾーン',
     },
     {
       id: 'responsive',
