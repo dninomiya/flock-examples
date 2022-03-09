@@ -14,11 +14,6 @@ const GuideHeader = ({ guide }: Props) => {
 
   return (
     <div className="py-6 flex items-center space-x-6">
-      <Link href="/">
-        <a>
-          <HiArrowLeft className="text-2xl" />
-        </a>
-      </Link>
       <h1 className="font-bold text-xl">{guide.title}</h1>
       <span className="flex-1"></span>
       <a
