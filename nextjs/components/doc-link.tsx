@@ -9,20 +9,15 @@ const DocLink: FC<{
 
   if (isExternal) {
     return (
-      <a
-        href={href}
-        rel="noreferrer"
-        className="text-indigo-600"
-        target="_blank"
-      >
+      <a href={href} rel="noreferrer" className="text-pink-600" target="_blank">
         <span>{children}</span>
-        <HiOutlineExternalLink className="inline-block w-3 h-3 text-indigo-400 align-top" />
+        <HiOutlineExternalLink className="inline-block w-3 h-3 text-pink-400 align-top" />
       </a>
     );
   } else {
     return (
       <Link href={href}>
-        <a className="text-indigo-600">{children}</a>
+        <a className="text-pink-600">{children}</a>
       </Link>
     );
   }
