@@ -268,6 +268,11 @@ export const UiCategory: Category = {
       ],
     },
     {
+      id: 'tab',
+      title: 'タブ',
+      sources: ['demos/tab.tsx'],
+    },
+    {
       id: 'virtual-scroll',
       title: 'バーチャルスクロール',
     },
@@ -278,10 +283,6 @@ export const UiCategory: Category = {
     {
       id: 'smooth-scroll',
       title: 'スムーススクロール',
-    },
-    {
-      id: 'tab',
-      title: 'タブ',
     },
     {
       id: 'rich-link',
