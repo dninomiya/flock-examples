@@ -6,6 +6,10 @@ export default function Document() {
     <Html lang="ja">
       <Head>
         <Favicon />
+        <meta
+          name="google-site-verification"
+          content="w0enkzfN5KeN1Y3qNDYvPMkD1RkrOyB3JIgdewTO-TI"
+        />
       </Head>
       <body>
         <Main />
