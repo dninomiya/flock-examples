@@ -32,6 +32,19 @@ export const SeoCategory: Category = {
     {
       id: 'sitemap',
       title: 'サイトマップ',
+      sources: ['next-sitemap.js', 'package.json'],
+      libraries: [
+        {
+          title: 'next-sitemap',
+          url: 'https://www.npmjs.com/package/next-sitemap',
+        },
+      ],
+      docs: [
+        {
+          title: '',
+          url: 'https://github.com/iamvishnusankar/next-sitemap',
+        },
+      ],
     },
     {
       id: 'analytics',
