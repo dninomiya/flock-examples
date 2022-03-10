@@ -59,5 +59,9 @@ export const InstallationCategory: Category = {
         },
       ],
     },
+    {
+      id: 'visual-studio-code-settings',
+      title: 'Visual Studio Codeの設定',
+    },
   ],
 };
