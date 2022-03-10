@@ -3,8 +3,12 @@
 ```tsx
 logEvent(ga, 'イベントタイプ', {
   content_type: 'コンテンツの種類',
-  id: 'コンテンツのID',
-  name: 'コンテンツの名前'
+  items: [
+    {
+      id: 'コンテンツのID',
+      name: 'コンテンツの名前'
+    }
+  ]
 });
 ```
 
