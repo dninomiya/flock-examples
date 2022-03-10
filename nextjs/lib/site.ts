@@ -8,5 +8,5 @@ export const Site = {
   youtube: 'https://www.youtube.com/channel/UCUPq5dKFGnOziaqYI-ejYcg',
   github: 'https://github.com/flock-team/demos',
   flock: 'https://flock.codes/about',
-  repository: 'https://github.com/flock-team/flock-examples',
+  repository: 'https://github.com/dninomiya/flock-examples',
 };

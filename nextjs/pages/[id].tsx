@@ -31,7 +31,7 @@ const Example = ({
     if (process.env.NODE_ENV === 'development') {
       return `vscode://file/${process.env.NEXT_PUBLIC_PROJECT_PATH}/docs/${guide.id}.md`;
     } else {
-      return `https://github.com/flock-team/flock-examples/edit/main/nextjs/docs/${guide.id}.md`;
+      return `https://github.com/dninomiya/flock-examples/edit/main/nextjs/docs/${guide.id}.md`;
     }
   };
 

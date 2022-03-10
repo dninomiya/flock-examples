@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
               <a
                 className="block group"
-                href="https://github.com/flock-team/flock-examples/issues/new?assignees=dninomiya&labels=%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88&template=-----.md&title="
+                href="https://github.com/dninomiya/flock-examples/issues/new?assignees=dninomiya&labels=%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88&template=-----.md&title="
                 target="_blank"
                 rel="noreferrer"
               >

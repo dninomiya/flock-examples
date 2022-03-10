@@ -30,7 +30,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://github.com/flock-team/flock-examples/commits/main"
+            href="https://github.com/dninomiya/flock-examples/commits/main"
             target="_blank"
             rel="noreferrer"
             className="flex"
