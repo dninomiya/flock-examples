@@ -16,6 +16,6 @@ https://flock-examples.vercel.app/
 
 - [Twitterでシェア](https://twitter.com/intent/tweet?text=https://examples.flock.codes/)
 - [Twitter](https://twitter.com/d151005)のフォロー
-- [GitHub](https://github.com/nino-cast)のフォロー
+- [GitHub](https://github.com/)のフォロー
 - [YouTube](https://www.youtube.com/channel/UCUPq5dKFGnOziaqYI-ejYcg)の登録
 - このリポジトリにスター
