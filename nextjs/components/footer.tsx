@@ -72,7 +72,7 @@ const Footer = () => {
           <SiGithub />
         </a>
       </div>
-      <p className="text-gray-600">&copy; {new Date().getFullYear()} Flock</p>
+      <p className="text-gray-600">&copy; 2022 Flock</p>
     </footer>
   );
 };
