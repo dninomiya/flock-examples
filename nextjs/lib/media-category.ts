@@ -36,5 +36,9 @@ export const MediaCategory: Category = {
       id: 'youtube-player',
       title: 'YouTubeプレイヤー',
     },
+    {
+      id: 'vimeo-player',
+      title: 'Vimeoプレイヤー',
+    },
   ],
 };

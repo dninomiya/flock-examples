@@ -102,22 +102,23 @@ export const AuthCategory: Category = {
       ],
     },
     {
+      id: 'microsoft-login',
+      title: 'Microsoftログイン',
+      sources: ['demos/microsoft-login.tsx'],
+      docs: [
+        {
+          title: 'JavaScript による Microsoft を使用した認証',
+          url: 'https://firebase.google.com/docs/auth/web/microsoft-oauth?authuser=1',
+        },
+      ],
+    },
+    {
       id: 'apple-login',
       title: 'Appleログイン',
       docs: [
         {
           title: 'JavaScript で Apple を使用して認証する',
           url: 'https://firebase.google.com/docs/auth/web/apple?authuser=1',
-        },
-      ],
-    },
-    {
-      id: 'microsoft-login',
-      title: 'Microsoftログイン',
-      docs: [
-        {
-          title: 'JavaScript による Microsoft を使用した認証',
-          url: 'https://firebase.google.com/docs/auth/web/microsoft-oauth?authuser=1',
         },
       ],
     },
