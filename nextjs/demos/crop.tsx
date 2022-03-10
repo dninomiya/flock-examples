@@ -58,8 +58,8 @@ const Crop = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 rounded-lg overflow-hidden">
-      <div className="flex flex-col bg-black/60">
+    <div className="grid grid-cols-1 lg:grid-cols-2 rounded-lg overflow-hidden">
+      <div className="flex flex-col h-72 lg:h-auto bg-black/60">
         <div className="py-3 px-2">
           <input
             className="text-sm"
@@ -92,6 +92,7 @@ const Crop = () => {
         {targetImage && (
           <div className="flex items-center space-x-4 p-2 bg-black">
             <input
+              className="flex-1 min-w-0"
               type="range"
               min={minZoom}
               max={(minZoom || 0) + 1}
@@ -99,9 +100,9 @@ const Crop = () => {
               ref={zoomSliderRef}
               onChange={changeZoom}
             />
-            <span className="flex-1"></span>
+            <span className="lg:flex-1"></span>
             <button
-              className="opacity-60 text-sm"
+              className="opacity-60 text-sm whitespace-nowrap"
               onClick={() => {
                 setTargetImage(null);
                 setPreview(undefined);
@@ -110,7 +111,7 @@ const Crop = () => {
               リセット
             </button>
             <button
-              className="text-sm p-2 rounded bg-pink-600 text-white"
+              className="text-sm p-2 rounded bg-pink-600 text-white whitespace-nowrap"
               onClick={crop}
             >
               切り抜く
@@ -118,10 +119,10 @@ const Crop = () => {
           </div>
         )}
       </div>
-      <div className="bg-slate-900 p-10">
+      <div className="bg-slate-900 p-4 lg:p-10">
         <div
           className={classNames(
-            'mx-auto w-80 border-dashed overflow-hidden aspect-square rounded-md border-slate-700',
+            'mx-auto lg:w-80 border-dashed overflow-hidden aspect-square rounded-md border-slate-700',
             preview ? 'shadow' : 'border-2 bg-slate-800/10'
           )}
         >

@@ -60,7 +60,7 @@ const GuideDemoAndSourceViewer = ({ guide, demoExists, sources }: Props) => {
       <div className="absolute -inset-5 bg-grid opacity-10 dark:opacity-5"></div>
       <div className="dark:bg-slate-700/10 bg-slate-100/40 inset-0 absolute"></div>
       {demoExists && Demo && (
-        <div className="relative p-10">
+        <div className="relative p-6 lg:p-10">
           <Demo />
         </div>
       )}

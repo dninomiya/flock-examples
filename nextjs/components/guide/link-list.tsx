@@ -100,8 +100,10 @@ const ListItem: FC<{ url: string; title: string; icon?: ReactNode }> = ({
       className="inline-flex items-center space-x-1"
     >
       {icon || renderDocIcon(url)}
-      <span>{title}</span>
-      <HiOutlineExternalLink />
+      <span className="flex-1">
+        {title}
+        <HiOutlineExternalLink className="inline align-top" />
+      </span>
     </a>
   );
 };
