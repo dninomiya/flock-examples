@@ -43,7 +43,7 @@ const Footer = () => {
 
       <div className="inline-flex mb-4 text-xl bg-white rounded-full p-0.5 space-x-4 pr-5 items-center">
         <img
-          src="https://github.com/nino-cast.png"
+          src="https://github.com/dninomiya.png"
           alt=""
           className="rounded-full overflow-hidden w-10 h-10"
         />
@@ -64,7 +64,7 @@ const Footer = () => {
           <SiYoutube />
         </a>
         <a
-          href="https://github.com/nino-cast"
+          href="https://github.com/dninomiya"
           target="_blank"
           rel="noreferrer"
           className="text-[#171515]"

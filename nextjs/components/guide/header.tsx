@@ -25,7 +25,7 @@ const GuideHeader = ({ guide }: Props) => {
         <h1 className="font-bold text-xl">{guide.title}</h1>
         <span className="flex-1"></span>
         <a
-          href={`https://github.com/flock-team/flock-examples/issues/new?assignees=nino-cast&labels=%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E5%A0%B1%E5%91%8A&title=「${
+          href={`https://github.com/flock-team/flock-examples/issues/new?assignees=dninomiya&labels=%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E5%A0%B1%E5%91%8A&title=「${
             guide.title
           }」に関する報告&body=url:%0D%0A${`${Site.origin}/${router.query.id}`}%0D%0A%0D%0A報告内容:%0D%0A`}
           target="_blank"
