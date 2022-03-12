@@ -12,7 +12,7 @@ const GuideGridItem = ({ guide }: Props) => {
     return (
       <Link href={`/${guide.id}`} key={guide.id}>
         <a className="block group">
-          <div className="aspect-video transition-transform group-hover:scale-105 shadow rounded-lg relative overflow-hidden">
+          <div className="aspect-video bg-[#F3F5F6] transition-transform group-hover:scale-105 shadow rounded-lg relative overflow-hidden ring-1 ring-slate-200">
             <div className="absolute inset-0">
               <Image
                 src={`/images/${guide.id}.png`}
@@ -22,7 +22,7 @@ const GuideGridItem = ({ guide }: Props) => {
               />
             </div>
           </div>
-          <p className="mt-1">{guide.title}</p>
+          <p className="mt-2 text-sm">{guide.title}</p>
         </a>
       </Link>
     );
@@ -35,7 +35,7 @@ const GuideGridItem = ({ guide }: Props) => {
           準備中
         </p>
       </div>
-      <p className="mt-1">{guide.title}</p>
+      <p className="mt-2 text-sm">{guide.title}</p>
     </div>
   );
 };

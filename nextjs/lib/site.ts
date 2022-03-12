@@ -9,4 +9,5 @@ export const Site = {
   github: 'https://github.com/dninomiya/flock-examples',
   flock: 'https://flock.codes/about',
   repository: 'https://github.com/dninomiya/flock-examples',
+  sponsor: 'https://github.com/sponsors/dninomiya',
 };

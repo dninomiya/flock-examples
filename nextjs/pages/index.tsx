@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <div>
       <div className="py-4 bg-white dark:bg-black/30 border-b dark:border-gray-800 text-sm">
         <p className="container opacity-80">
-          このドキュメントは Next.js、Tailwind
+          すべてのドキュメントは Next.js、Tailwind
           CSS、Firebase、Algoliaをベースに設計されています。
         </p>
       </div>
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                     <HiPlus />
                   </div>
                 </div>
-                <p className="mt-1 opacity-40">リクエスト</p>
+                <p className="mt-2 text-sm opacity-40">リクエスト</p>
               </a>
             </div>
           </div>

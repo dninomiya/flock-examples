@@ -1,7 +1,12 @@
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { HiMoon, HiOutlineCollection, HiOutlineMoon } from 'react-icons/hi';
+import {
+  HiMoon,
+  HiOutlineCollection,
+  HiOutlineHeart,
+  HiOutlineMoon,
+} from 'react-icons/hi';
 import { SiGithub } from 'react-icons/si';
 import { Site } from '../lib/site';
 
@@ -25,6 +30,15 @@ const Header = () => {
           </Link>
         </p>
         <span className="flex-1"></span>
+        <a
+          href={Site.sponsor}
+          target="_blank"
+          className="flex items-center space-x-2 text-sm border rounded-md text-slate-600 dark:text-slate-300 px-2 py-1.5 bg-slate-100 hover:bg-slate-200 hover:border-slate-300 border-slate-200 dark:bg-slate-800 dark:border-slate-700 transition-colors dark:hover:border-slate-600 dark:hover:bg-slate-700"
+          rel="noreferrer"
+        >
+          <HiOutlineHeart className="text-pink-600" size={20} />
+          <span>応援する</span>
+        </a>
         <button
           className="text-2xl"
           onClick={() => setTheme(isDark ? 'light' : 'dark')}
