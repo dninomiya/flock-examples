@@ -8,12 +8,7 @@ const GaEvents = () => {
 
     logEvent(ga, 'select_content', {
       content_type: 'demo',
-      items: [
-        {
-          id: target,
-          name,
-        },
-      ],
+      item_id: target,
     });
     alert(`${name}のクリックを計測しました`);
   };

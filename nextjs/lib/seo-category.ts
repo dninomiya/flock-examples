@@ -65,6 +65,10 @@ export const SeoCategory: Category = {
           title: '',
           url: 'https://firebase.google.com/docs/analytics/debugview?hl=ja',
         },
+        {
+          title: '',
+          url: 'https://www.data-be.at/magazine/ga4-events/',
+        },
       ],
     },
     {
