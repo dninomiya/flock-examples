@@ -1,3 +1,4 @@
+import { logEvent } from 'firebase/analytics';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
@@ -8,6 +9,7 @@ import {
   HiOutlineMoon,
 } from 'react-icons/hi';
 import { SiGithub } from 'react-icons/si';
+import { ga } from '../firebase/client';
 import { Site } from '../lib/site';
 
 const Header = () => {
@@ -17,6 +19,13 @@ const Header = () => {
   useEffect(() => {
     setIsDark(theme === 'dark');
   }, [theme]);
+
+  const logSponsor = () => {
+    logEvent(ga, 'select_content', {
+      content_type: 'chance',
+      item_id: 'sponsor',
+    });
+  };
 
   return (
     <header className="border-b dark:border-slate-800">
@@ -35,6 +44,7 @@ const Header = () => {
           target="_blank"
           className="flex items-center space-x-2 text-sm border rounded-md text-slate-600 dark:text-slate-300 px-2 py-1.5 bg-slate-100 hover:bg-slate-200 hover:border-slate-300 border-slate-200 dark:bg-slate-800 dark:border-slate-700 transition-colors dark:hover:border-slate-600 dark:hover:bg-slate-700"
           rel="noreferrer"
+          onClick={logSponsor}
         >
           <HiOutlineHeart className="text-pink-600" size={20} />
           <span>応援する</span>
