@@ -35,7 +35,7 @@ const Footer = () => {
             rel="noreferrer"
             className="flex"
           >
-            <span>更新ログ</span>
+            <span>更新履歴</span>
             <HiExternalLink />
           </a>
         </li>

@@ -50,7 +50,7 @@ const Header = () => {
           <span>応援する</span>
         </a>
         <button
-          className="text-2xl"
+          className="text-2xl hidden lg:block"
           onClick={() => setTheme(isDark ? 'light' : 'dark')}
         >
           {isDark ? (
@@ -59,7 +59,12 @@ const Header = () => {
             <HiOutlineMoon className="text-gray-400" />
           )}
         </button>
-        <a href={Site.github} target="_blank" rel="noreferrer">
+        <a
+          href={Site.github}
+          target="_blank"
+          rel="noreferrer"
+          className="hidden lg:block"
+        >
           <SiGithub className="text-2xl" />
         </a>
       </div>

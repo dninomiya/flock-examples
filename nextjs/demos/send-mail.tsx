@@ -38,7 +38,7 @@ const Mail = () => {
       <p className="mb-4 text-sm mt-2">
         必ず自分が所有するメールアドレスにしてください。あるいは
         <a
-          href="https://sute.jp/"
+          href="https://relay.firefox.com/accounts/profile/"
           target="_blank"
           rel="noreferrer"
           className="text-pink-600"
