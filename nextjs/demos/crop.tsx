@@ -83,7 +83,8 @@ const Crop = () => {
               cropBoxResizable={false}
               toggleDragModeOnDblclick={false}
               center={false}
-              viewMode={3}
+              background={false}
+              viewMode={1}
               autoCropArea={1}
               zoomOnWheel={false}
             />
