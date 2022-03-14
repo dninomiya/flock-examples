@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const UiCategory: Category = {
   title: 'UI',
-  features: [
+  items: [
     {
       id: 'page-loading',
       title: 'ページローディング',
@@ -275,78 +275,97 @@ export const UiCategory: Category = {
     {
       id: 'virtual-scroll',
       title: 'バーチャルスクロール',
+      ready: true,
     },
     {
       id: 'chart',
       title: 'チャート',
+      ready: true,
     },
     {
       id: 'smooth-scroll',
       title: 'スムーススクロール',
+      ready: true,
     },
     {
       id: 'rich-link',
       title: 'リッチリンク',
+      ready: true,
     },
     {
       id: 'modal',
       title: 'モーダル',
+      ready: true,
     },
     {
       id: 'google-map',
       title: 'Google マップ',
+      ready: true,
     },
     {
       id: 'tooltip',
       title: 'ツールチップ',
+      ready: true,
     },
     {
       id: 'disclosure',
       title: 'ディスクロージャー',
+      ready: true,
     },
     {
       id: '3d',
       title: '3D',
+      ready: true,
     },
     {
       id: 'more',
       title: 'もっと読み込む',
+      ready: true,
     },
     {
       id: 'ar',
       title: 'AR',
+      ready: true,
     },
     {
       id: 'parallax',
       title: 'パララックス',
+      ready: true,
     },
     {
       id: 'svg-animation',
       title: 'SVGアニメーション',
+      ready: true,
     },
     {
       id: 'push-notification',
       title: 'プッシュ通知',
+      ready: true,
     },
     {
       id: 'side-nav',
       title: 'サイドナビゲーション',
+      ready: true,
     },
     {
       id: 'calendar',
       title: 'カレンダー',
+      ready: true,
     },
     {
       id: 'sort',
       title: 'ソート',
+      ready: true,
     },
     {
       id: 'drag-drop',
       title: 'ドラッグ&ドロップ',
+      ready: true,
     },
     {
       id: 'responsive',
       title: 'レスポンシブ',
+      ready: true,
     },
   ],
 };

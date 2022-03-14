@@ -23,4 +23,4 @@ export const Categories: Category[] = [
   OtherCategory,
 ];
 
-export const Features = Categories.map((cat) => cat.features).flat();
+export const Features = Categories.map((cat) => cat.items).flat();

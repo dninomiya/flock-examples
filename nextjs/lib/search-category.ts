@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const SearchCategory: Category = {
   title: '検索',
-  features: [
+  items: [
     {
       id: 'installation-algolia',
       title: 'Algolia インストール',

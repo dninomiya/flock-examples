@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { BasicDoc } from '../types/basic-doc';
 import { Guide } from '../types/guide';
 
 type Props = {
-  guide: Guide;
+  guide: Guide | BasicDoc;
 };
 
 const GuideGridItem = ({ guide }: Props) => {
-  if (guide.sources) {
+  if (!guide.ready) {
     return (
       <Link href={`/${guide.id}`} key={guide.id}>
         <a className="block group">

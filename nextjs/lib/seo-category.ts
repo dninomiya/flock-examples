@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const SeoCategory: Category = {
   title: 'SEO',
-  features: [
+  items: [
     {
       id: 'meta',
       title: 'メタ、OGP',
@@ -100,6 +100,7 @@ export const SeoCategory: Category = {
     {
       id: 'ga-api',
       title: 'GA API連携',
+      ready: true,
     },
   ],
 };

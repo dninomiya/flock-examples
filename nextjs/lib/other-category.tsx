@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const OtherCategory: Category = {
   title: '機能',
-  features: [
+  items: [
     {
       id: 'custom-component',
       title: 'カスタムコンポーネント',
@@ -68,14 +68,17 @@ export const OtherCategory: Category = {
     {
       id: 'mailing-list',
       title: 'メールマガジン配信',
+      ready: true,
     },
     {
       id: 'google-forms-api',
       title: 'Google Forms API',
+      ready: true,
     },
     {
       id: 'rss',
       title: 'RSS',
+      ready: true,
     },
   ],
 };

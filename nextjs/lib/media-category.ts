@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const MediaCategory: Category = {
   title: 'メディア',
-  features: [
+  items: [
     {
       id: 'music',
       title: 'ミュージックプレイヤー',
@@ -31,14 +31,17 @@ export const MediaCategory: Category = {
     {
       id: 'video',
       title: '動画プレイヤー',
+      ready: true,
     },
     {
       id: 'youtube-player',
       title: 'YouTubeプレイヤー',
+      ready: true,
     },
     {
       id: 'vimeo-player',
       title: 'Vimeoプレイヤー',
+      ready: true,
     },
   ],
 };

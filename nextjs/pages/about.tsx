@@ -29,7 +29,7 @@ const About = () => {
         <h2 id="support">サポート</h2>
 
         <p>
-          Flock Examples
+          {Site.title}
           は無料で公開していますが、モチベーション維持のため以下のいずれか（できればすべて）のサポートをいただけると嬉しいです。TwitterやYouTubeではWebアプリ開発に関する発信を行なっています。
         </p>
 

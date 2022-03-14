@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const InstallationCategory: Category = {
   title: '環境構築',
-  features: [
+  items: [
     {
       title: 'Next.js インストール',
       id: 'installation-nextjs',
@@ -62,6 +62,7 @@ export const InstallationCategory: Category = {
     {
       id: 'visual-studio-code-settings',
       title: 'Visual Studio Codeの設定',
+      ready: true,
     },
   ],
 };

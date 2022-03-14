@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const AccessibilityCategory: Category = {
   title: 'アクセシビリティ',
-  features: [
+  items: [
     {
       id: 'dark-mode',
       title: 'ダークモード',
@@ -23,10 +23,12 @@ export const AccessibilityCategory: Category = {
     {
       id: 'accessibility',
       title: 'アクセシビリティ',
+      ready: true,
     },
     {
       id: 'translate',
       title: '多言語対応',
+      ready: true,
     },
   ],
 };

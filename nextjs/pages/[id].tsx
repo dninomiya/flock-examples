@@ -14,7 +14,7 @@ import GuideDemoAndSourceViewer from '../components/guide/demo-and-source-viewer
 import GuideHeader from '../components/guide/header';
 import GuideHeading from '../components/guide/heading';
 import GuideLinkList from '../components/guide/link-list';
-import { Features } from '../lib/features';
+import { Features } from '../lib/guides';
 import { Site } from '../lib/site';
 import { Guide } from '../types/guide';
 

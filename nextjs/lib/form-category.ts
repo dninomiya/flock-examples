@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const FormCategory: Category = {
   title: 'フォーム',
-  features: [
+  items: [
     {
       id: 'form',
       title: 'フォーム',
@@ -147,10 +147,12 @@ export const FormCategory: Category = {
     {
       id: 'tag-select',
       title: 'タグ入力',
+      ready: true,
     },
     {
       id: 'image-upload',
       title: '画像アップロード',
+      ready: true,
     },
   ],
 };

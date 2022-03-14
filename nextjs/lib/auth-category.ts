@@ -2,7 +2,7 @@ import { Category } from '../types/category';
 
 export const AuthCategory: Category = {
   title: '認証',
-  features: [
+  items: [
     {
       id: 'sns-login',
       title: 'SNSログイン',
@@ -115,6 +115,7 @@ export const AuthCategory: Category = {
     {
       id: 'apple-login',
       title: 'Appleログイン',
+      ready: true,
       docs: [
         {
           title: 'JavaScript で Apple を使用して認証する',
@@ -125,6 +126,7 @@ export const AuthCategory: Category = {
     {
       id: 'discord-login',
       title: 'Discordログイン',
+      ready: true,
     },
   ],
 };
