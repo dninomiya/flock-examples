@@ -3,10 +3,27 @@ import Link from 'next/link';
 import React from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 import { SiGithub, SiTwitter, SiYoutube } from 'react-icons/si';
+import { CAUSES } from '../lib/cause-list';
+import { BASICS } from '../lib/basics';
+import { Categories } from '../lib/guides';
 
 const Footer = () => {
+  const getReadyCount = () => {
+    const readyCauses = CAUSES.filter((item) => item.ready).concat();
+    const readyGuides = Categories.map((item) => item.items)
+      .flat()
+      .filter((item) => item.ready);
+    const readyBasics = BASICS.map((item) => item.items)
+      .flat()
+      .filter((item) => item.ready);
+    return [readyCauses, readyGuides, readyBasics].flat().length;
+  };
+
   return (
     <footer className="container mt-20 py-10">
+      <p className="mb-4 opacity-40">
+        準備中: {getReadyCount()} / 完成までの目安: {getReadyCount() / 4}日
+      </p>
       <p className="mb-6 text-gray-600">
         このサイトはWebアプリ開発メンターサービス
         <a
