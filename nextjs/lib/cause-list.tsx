@@ -1,21 +1,6 @@
-type DemoFeature =
-  | 'SNS'
-  | 'マーケットプレース'
-  | 'クラウドソーシング'
-  | 'CMS'
-  | 'EC'
-  | 'ランディングページ'
-  | '動画プラットフォーム'
-  | 'マッチング';
+import { Cause } from '../types/cause';
 
-type Demo = {
-  id: string;
-  title: string;
-  features: DemoFeature[];
-  ready?: true;
-};
-
-export const DEMOS: Demo[] = [
+export const CAUSES: Cause[] = [
   {
     id: 'sns',
     title: 'Twitter風アプリ',

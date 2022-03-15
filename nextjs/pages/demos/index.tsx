@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import { HiPlus } from 'react-icons/hi';
 import GalleryLayout from '../../components/gallery-layout';
 import GuideGridItem from '../../components/guide-grid-item';
-import { DEMOS } from '../../lib/demos';
+import { CAUSES } from '../../lib/cause-list';
 
 const DemoPage: NextPage = () => {
   return (
@@ -15,8 +15,8 @@ const DemoPage: NextPage = () => {
 
         <div>
           <div className="grid sm:grid-cols-3 xl:grid-cols-6 gap-4">
-            {DEMOS.map((demo) => (
-              <GuideGridItem guide={demo} key={demo.id} />
+            {CAUSES.map((cause) => (
+              <GuideGridItem guide={cause} key={cause.id} />
             ))}
 
             <a
