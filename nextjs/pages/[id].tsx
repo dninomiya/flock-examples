@@ -86,11 +86,11 @@ export default Example;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: Features.filter((feature) => Boolean(feature.sources)).map(
-      (feature) => {
-        return { params: { id: feature.id } };
-      }
-    ),
+    paths: Features.filter((feature) =>
+      Boolean((feature as Guide).sources)
+    ).map((feature) => {
+      return { params: { id: feature.id } };
+    }),
     fallback: false,
   };
 };

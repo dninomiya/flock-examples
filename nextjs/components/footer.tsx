@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { HiExternalLink } from 'react-icons/hi';
@@ -42,10 +43,12 @@ const Footer = () => {
       </ul>
 
       <div className="inline-flex mb-4 text-xl bg-white rounded-full p-0.5 space-x-4 pr-5 items-center">
-        <img
-          src="https://github.com/dninomiya.png"
+        <Image
+          src="/image/nino.png"
           alt=""
-          className="rounded-full overflow-hidden w-10 h-10"
+          width={40}
+          height={40}
+          className="rounded-full overflow-hidden"
         />
         <a
           href="https://twitter.com/d151005"

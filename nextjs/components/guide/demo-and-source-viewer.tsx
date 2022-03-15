@@ -36,14 +36,14 @@ const GuideDemoAndSourceViewer = ({ guide, demoExists, sources }: Props) => {
     }
 
     return sources[0]?.fileName;
-  }, [router.query.file]);
+  }, [router.query.file, sources]);
 
   const activeSource = useMemo(() => {
     return (
       sources?.find((item) => item.fileName === activeFileName)?.source ||
       sources[0]?.source
     );
-  }, [activeFileName]);
+  }, [activeFileName, sources]);
 
   useEffect(() => {
     if (router.query.id) {
