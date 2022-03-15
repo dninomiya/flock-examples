@@ -44,7 +44,7 @@ const Footer = () => {
 
       <div className="inline-flex mb-4 text-xl bg-white rounded-full p-0.5 space-x-4 pr-5 items-center">
         <Image
-          src="/image/nino.png"
+          src="/images/nino.png"
           alt=""
           width={40}
           height={40}
