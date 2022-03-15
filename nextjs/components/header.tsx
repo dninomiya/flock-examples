@@ -21,7 +21,7 @@ const navigation = [
     name: '実装例をさがす',
   },
   {
-    href: '/demos',
+    href: '/causes',
     name: 'コース',
   },
 ];
