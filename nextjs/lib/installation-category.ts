@@ -60,6 +60,17 @@ export const InstallationCategory: Category = {
       ],
     },
     {
+      title: 'GitHubとDiscordの連携',
+      id: 'connect-github-discord',
+      sources: [],
+      docs: [
+        {
+          title: '',
+          url: 'https://docs.github.com/ja/get-started/customizing-your-github-workflow/exploring-integrations/about-webhooks',
+        },
+      ],
+    },
+    {
       id: 'visual-studio-code-settings',
       title: 'Visual Studio Codeの設定',
       ready: true,
