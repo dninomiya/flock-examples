@@ -2,6 +2,7 @@ import { Category } from '../types/category';
 import { AccessibilityCategory } from './accessibility-category';
 import { AuthCategory } from './auth-category';
 import { CommunityCategory } from './community-category';
+import { DeployCategory } from './deploy-category';
 import { FormCategory } from './form-category';
 import { InstallationCategory } from './installation-category';
 import { MediaCategory } from './media-category';
@@ -20,6 +21,7 @@ export const Categories: Category[] = [
   AccessibilityCategory,
   MediaCategory,
   CommunityCategory,
+  DeployCategory,
   OtherCategory,
 ];
 
