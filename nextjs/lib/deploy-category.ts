@@ -6,7 +6,6 @@ export const DeployCategory: Category = {
     {
       id: 'deploy-vercel',
       title: 'Vercelに公開',
-      ready: true,
     },
     {
       id: 'deploy-github',
