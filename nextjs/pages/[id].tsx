@@ -86,9 +86,7 @@ export default Example;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: Features.filter((feature) =>
-      Boolean((feature as Guide).sources)
-    ).map((feature) => {
+    paths: Features.filter((feature) => !feature.ready).map((feature) => {
       return { params: { id: feature.id } };
     }),
     fallback: false,

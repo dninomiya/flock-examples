@@ -6,7 +6,6 @@ export const InstallationCategory: Category = {
     {
       title: 'Next.js インストール',
       id: 'installation-nextjs',
-      sources: [],
       docs: [
         {
           title: 'Getting Started',
@@ -17,7 +16,6 @@ export const InstallationCategory: Category = {
     {
       title: 'Tailwind CSS インストール',
       id: 'installation-tailwindcss',
-      sources: [],
     },
     {
       title: 'Firebase 連携',
@@ -51,7 +49,6 @@ export const InstallationCategory: Category = {
     {
       title: 'Firebase 初期化',
       id: 'installation-firebase',
-      sources: [],
       docs: [
         {
           title: 'はじめに: 最初の関数の記述、テスト、デプロイ',
@@ -60,9 +57,12 @@ export const InstallationCategory: Category = {
       ],
     },
     {
+      id: 'visual-studio-code-settings',
+      title: 'Visual Studio Codeの設定',
+    },
+    {
       title: 'GitHubとDiscordの連携',
       id: 'connect-github-discord',
-      sources: [],
       docs: [
         {
           title: '',
@@ -73,18 +73,12 @@ export const InstallationCategory: Category = {
     {
       title: 'GitHubとSlackの連携',
       id: 'connect-github-slack',
-      sources: [],
       docs: [
         {
           title: '',
           url: 'https://docs.github.com/ja/get-started/customizing-your-github-workflow/exploring-integrations/about-webhooks',
         },
       ],
-    },
-    {
-      id: 'visual-studio-code-settings',
-      title: 'Visual Studio Codeの設定',
-      ready: true,
     },
   ],
 };
