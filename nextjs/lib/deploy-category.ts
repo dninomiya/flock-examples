@@ -10,7 +10,6 @@ export const DeployCategory: Category = {
     {
       id: 'deploy-github',
       title: 'GitHub Pagesに公開',
-      ready: true,
     },
     {
       id: 'deploy-firebase-hosting',
