@@ -30,17 +30,6 @@ const GuideHeader = ({ guide }: Props) => {
         <h1 className="font-bold text-xl flex-1">{guide.title}</h1>
         <div className="flex items-center space-x-3 mt-4 lg:mt-0">
           <a
-            href={`https://github.com/dninomiya/flock-examples/discussions/new?category=質問&title=%20in%20${
-              guide.title
-            }&body=[関連ガイド](${`${Site.origin}/${router.query.id}`})%0D%0A%0D%0A`}
-            target="_blank"
-            className="flex items-center space-x-2 px-3 py-2 hover:bg-black/10 dark:hover:bg-black/40 opacity-60 rounded-lg"
-            rel="noreferrer"
-          >
-            <HiOutlineChatAlt />
-            <span>質問</span>
-          </a>
-          <a
             href={`https://github.com/dninomiya/flock-examples/issues/new?assignees=dninomiya&labels=%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E5%A0%B1%E5%91%8A&title=「${
               guide.title
             }」に関する報告&body=url:%0D%0A${`${Site.origin}/${router.query.id}`}%0D%0A%0D%0A報告内容:%0D%0A`}
