@@ -27,14 +27,15 @@ const navigation = [
 ];
 
 const Header = () => {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [isDark, setIsDark] = useState<boolean>();
   const [isSideNavOpen, setIsSideNavOpen] = useState<boolean>(false);
   const router = useRouter();
 
   useEffect(() => {
-    setIsDark(theme === 'dark');
-  }, [theme]);
+    console.log(resolvedTheme);
+    setIsDark(resolvedTheme === 'dark');
+  }, [resolvedTheme]);
 
   const logSponsor = () => {
     logEvent(ga, 'select_content', {

@@ -4,13 +4,13 @@ import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 export default function DarkMode() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [checked, setChecked] = useState<boolean>();
-  const isDark = theme === 'dark';
+  const isDark = resolvedTheme === 'dark';
 
   useEffect(() => {
-    setChecked(theme === 'dark');
-  }, [theme]);
+    setChecked(resolvedTheme === 'dark');
+  }, [resolvedTheme]);
 
   if (checked === undefined) {
     return null;
