@@ -3,7 +3,6 @@ import { HiPlus } from 'react-icons/hi';
 import GalleryLayout from '../../components/gallery-layout';
 import GuideGridItem from '../../components/guide-grid-item';
 import { Categories } from '../../lib/guides';
-import { Guide } from '../../types/guide';
 
 const GuidePage: NextPage = () => {
   return (
