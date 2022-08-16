@@ -33,7 +33,6 @@ const Header = () => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(resolvedTheme);
     setIsDark(resolvedTheme === 'dark');
   }, [resolvedTheme]);
 
