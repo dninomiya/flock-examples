@@ -4,4 +4,5 @@ export type Post = {
   body: string;
   tags: string[];
   createdAt: number;
+  likeCount: number;
 };
