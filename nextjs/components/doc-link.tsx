@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 
 const DocLink: FC<{
   href: string;
+  children: ReactNode;
 }> = ({ href, children }) => {
   const isExternal = href?.match('^http');
 

@@ -1,8 +1,9 @@
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 
 const ExternalLink: FC<{
   href: string;
+  children: ReactNode;
 }> = ({ children, href }) => {
   return (
     <a

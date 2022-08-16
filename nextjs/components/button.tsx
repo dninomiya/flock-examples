@@ -1,6 +1,11 @@
 import classNames from 'classnames';
 import Link from 'next/link';
-import React, { AnchorHTMLAttributes, ButtonHTMLAttributes, FC } from 'react';
+import React, {
+  AnchorHTMLAttributes,
+  ButtonHTMLAttributes,
+  FC,
+  ReactNode,
+} from 'react';
 import { IconType } from 'react-icons';
 
 const Button: FC<
@@ -9,6 +14,7 @@ const Button: FC<
     | AnchorHTMLAttributes<HTMLAnchorElement>
   ) & {
     Icon?: IconType;
+    children: ReactNode;
   }
 > = ({ children, className, Icon, ...props }) => {
   const buttonClass = classNames(
