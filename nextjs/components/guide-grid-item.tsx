@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { BasicDoc } from '../types/basic-doc';
 import { Cause } from '../types/cause';
 import { Guide } from '../types/guide';
@@ -33,21 +32,22 @@ const GuideGridItem = ({ guide }: Props) => {
   }
 
   return (
-    <Link href={`/${guide.id}`} key={guide.id}>
-      <a className="block group">
-        <div className="aspect-video bg-[#F3F5F6] transition-transform group-hover:scale-105 shadow rounded-lg relative overflow-hidden ring-1 ring-slate-200">
-          <div className="absolute inset-0">
-            <Image
-              src={`/images/${guide.id}.png`}
-              width={1280}
-              height={720}
-              alt=""
-            />
-          </div>
+    <div className="block group">
+      <div className="aspect-video bg-[#F3F5F6] transition-transform group-hover:scale-105 shadow rounded-lg relative overflow-hidden ring-1 ring-slate-200">
+        <div className="absolute inset-0">
+          <Image
+            src={`/images/${guide.id}.png`}
+            width={1280}
+            height={720}
+            alt=""
+          />
+          <Link href={`/${guide.id}`} key={guide.id}>
+            <a className="absolute inset-0" />
+          </Link>
         </div>
-        <p className="mt-2 text-sm">{guide.title}</p>
-      </a>
-    </Link>
+      </div>
+      <p className="mt-2 text-sm">{guide.title}</p>
+    </div>
   );
 };
 
