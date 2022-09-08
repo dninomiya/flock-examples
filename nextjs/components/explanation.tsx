@@ -82,6 +82,7 @@ const Explanation = ({ markdown }: Props) => {
           img({ src }) {
             return (
               <a href={src} target="_blank" rel="noreferrer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={src}
                   className="rounded-md shadow overflow-hidden block"
