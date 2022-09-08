@@ -8,7 +8,7 @@ Next.js / Tailwind CSS / Firebase / Algolia を使用したWebアプリ開発の
 
 ## サイト
 
-https://flock-examples.vercel.app/
+https://examples.flock.codes
 
 ## サポート
 
