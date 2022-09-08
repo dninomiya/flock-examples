@@ -1,5 +1,3 @@
-import React from 'react';
-import { HiExternalLink } from 'react-icons/hi';
 import Breadcrumbs from '../components/breadcrumbs';
 import ExternalLink from '../components/external-link';
 import { Site } from '../lib/site';
@@ -21,7 +19,7 @@ const About = () => {
         <h1>このサイトについて</h1>
         <p>
           Webアプリエンジニアの
-          <ExternalLink href={Site.twitter}>nino</ExternalLink>
+          <ExternalLink href={Site.twitter}>Daichi Ninomiya</ExternalLink>
           がWebアプリにまつわる実装例をまとめたサイトです。Next.js と Tailwind
           CSS と Firebase をベースにしています。少しでもお役に立てれば幸いです。
         </p>
@@ -30,7 +28,7 @@ const About = () => {
 
         <p>
           {Site.title}
-          は無料で公開していますが、モチベーション維持のため以下のいずれか（できればすべて）のサポートをいただけると嬉しいです。TwitterやYouTubeではWebアプリ開発に関する発信を行なっています。
+          は無料で公開していますが、モチベーション維持のため以下のいずれかのサポートをいただけると嬉しいです。TwitterやYouTubeではWebアプリ開発に関する発信を行なっています。
         </p>
 
         <ul>
@@ -80,7 +78,7 @@ const About = () => {
         </p>
 
         <h3>案件に使っても良いですか？</h3>
-        <p>ご自由にどうぞ。ただし責任は一切持ちません。</p>
+        <p>自由にご活用ください。（ただしトラブルに関する責任は負いません）</p>
 
         <h3>
           このサイトをプログラミングスクールの有料商材にしてもいいですか？
@@ -100,14 +98,6 @@ const About = () => {
         <h3>コントリビュートしても良いですか？</h3>
         <p>
           誤字修正からバグ対応、リファクタリングまでPRは大歓迎です。ただしすべてマージするとは限らないので仕様変更や機能追加を伴うPRの際には事前にIssue等で提案をいただければと思います。なお、当サイトはOSSではないため予告なく非公開になる可能性があります。あらかじめご了承ください。
-        </p>
-
-        <h2>宣伝</h2>
-
-        <p>
-          Webアプリ開発のメンターサービス
-          <ExternalLink href={Site.flock}>Flock</ExternalLink>
-          をやってます。ちゃんとしたWebアプリ（もしくは実績）を作りたい方はご検討ください。
         </p>
       </div>
     </div>

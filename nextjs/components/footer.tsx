@@ -10,20 +10,6 @@ import { Categories } from '../lib/guides';
 const Footer = () => {
   return (
     <footer className="container mt-20 py-10">
-      <p className="mb-6 text-gray-600">
-        このサイトはWebアプリ開発メンターサービス
-        <a
-          target="_blank"
-          className="text-pink-600 mx-1 inline-flex items-center space-x-1"
-          href="https://flock.codes/about"
-          rel="noreferrer"
-        >
-          <span>FLock</span>
-          <HiExternalLink />
-        </a>
-        の教材の一部であり、予告なく非公開になることがあります。
-      </p>
-
       <ul className="mb-6 flex opacity-60 space-x-4">
         <li>
           <Link href="/about">

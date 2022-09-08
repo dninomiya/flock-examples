@@ -13,16 +13,8 @@ import { Site } from '../lib/site';
 
 const navigation = [
   {
-    href: '/basic',
-    name: '基礎をまなぶ',
-  },
-  {
     href: '/guides',
-    name: '実装例をさがす',
-  },
-  {
-    href: '/causes',
-    name: 'コース',
+    name: '実装例',
   },
 ];
 
