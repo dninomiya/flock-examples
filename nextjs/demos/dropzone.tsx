@@ -6,7 +6,7 @@ import { HiPhotograph } from 'react-icons/hi';
 const Dropzone = () => {
   const [preview, setPreview] = useState<string>();
 
-  const onDropAccepted = useCallback((acceptedFiles) => {
+  const onDropAccepted = useCallback((acceptedFiles: File[]) => {
     const file = acceptedFiles[0] as File;
     const reader = new FileReader();
 
@@ -19,7 +19,10 @@ const Dropzone = () => {
   const { getRootProps, getInputProps, isDragActive, isDragAccept } =
     useDropzone({
       onDropAccepted,
-      accept: 'image/png,image/jpeg',
+      accept: {
+        'image/jpeg': [],
+        'image/png': [],
+      },
     });
 
   const isActive = isDragActive && isDragAccept;
