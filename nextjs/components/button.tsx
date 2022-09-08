@@ -26,7 +26,7 @@ const Button: FC<
     const { href, ...linkProps } =
       props as AnchorHTMLAttributes<HTMLAnchorElement>;
     return (
-      <Link href={href!} {...props}>
+      <Link href={href!}>
         <a className={buttonClass} {...linkProps}>
           {Icon && <Icon />}
           <span className="flex-1">{children}</span>
