@@ -1,4 +1,3 @@
-import React from 'react';
 import { useFieldArray, useForm } from 'react-hook-form';
 import { HiOutlineMinusCircle, HiOutlinePlusCircle } from 'react-icons/hi';
 
@@ -56,7 +55,14 @@ const DynamicForm = () => {
                     <HiOutlineMinusCircle className="text-xl opacity-60" />
                   </button>
                 )}
-                <button onClick={() => insert(index + 1, {})} type="button">
+                <button
+                  onClick={() =>
+                    insert(index + 1, {
+                      value: '',
+                    })
+                  }
+                  type="button"
+                >
                   <HiOutlinePlusCircle className="text-xl opacity-60" />
                 </button>
               </div>
