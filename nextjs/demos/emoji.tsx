@@ -1,6 +1,5 @@
 import { Picker, Emoji } from 'emoji-mart';
-import 'emoji-mart/css/emoji-mart.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const EmojiDemo = () => {
   const [emoji, setEmoji] = useState<string>('santa');
