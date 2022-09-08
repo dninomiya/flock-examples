@@ -1,10 +1,9 @@
-import React from 'react';
-import QRCode from 'react-qr-code';
+import { QRCodeSVG } from 'qrcode.react';
 
 const Qr = () => {
   return (
     <div>
-      <QRCode value={location?.href} />
+      <QRCodeSVG value={location?.href} />
     </div>
   );
 };
