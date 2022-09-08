@@ -1,6 +1,6 @@
-import React, { FC, useEffect, useState } from 'react';
-import faker from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 import classNames from 'classnames';
+import { useEffect, useState } from 'react';
 import { HiRefresh } from 'react-icons/hi';
 
 type User = {
