@@ -113,7 +113,8 @@ const Explanation = ({ markdown }: Props) => {
                   </CopyToClipboard>
                 </div>
                 <SyntaxHighlighter
-                  style={vscDarkPlus}
+                  // TODO: remote any https://github.com/react-syntax-highlighter/react-syntax-highlighter/issues/439
+                  style={vscDarkPlus as any}
                   language={match?.[1] || 'plane'}
                   PreTag="div"
                   customStyle={{ margin: 0 }}
