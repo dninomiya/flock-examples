@@ -1,6 +1,8 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
-const GalleryLayout: FC = ({ children }) => {
+const GalleryLayout: FC<{
+  children: ReactNode;
+}> = ({ children }) => {
   return (
     <div>
       <div className="py-4 bg-white dark:bg-black/30 border-b dark:border-gray-800 text-sm">

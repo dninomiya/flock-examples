@@ -1,6 +1,13 @@
 import { onAuthStateChanged, User as FirebaseUser } from '@firebase/auth';
 import { doc, onSnapshot, Unsubscribe } from '@firebase/firestore';
-import { createContext, FC, useContext, useEffect, useState } from 'react';
+import {
+  createContext,
+  FC,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 import { auth, db } from '../firebase/client';
 import { User } from '../types/user';
 
@@ -15,7 +22,9 @@ const UserContext = createContext<UserContextData>({
   firebaseUser: null,
 });
 
-export const AuthProvider: FC = ({ children }) => {
+export const AuthProvider: FC<{
+  children: ReactNode;
+}> = ({ children }) => {
   const [user, setUser] = useState<User | null>();
   const [firebaseUser, setFirebaseUser] = useState<FirebaseUser | null>(null);
 

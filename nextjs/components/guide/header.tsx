@@ -1,11 +1,5 @@
 import { useRouter } from 'next/router';
-import React from 'react';
-import {
-  HiChatAlt2,
-  HiFlag,
-  HiOutlineChatAlt,
-  HiOutlineChatAlt2,
-} from 'react-icons/hi';
+import { HiFlag } from 'react-icons/hi';
 import { Site } from '../../lib/site';
 import { Guide } from '../../types/guide';
 import Breadcrumbs from '../breadcrumbs';
