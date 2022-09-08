@@ -32,7 +32,7 @@ export const SeoCategory: Category = {
     {
       id: 'sitemap',
       title: 'サイトマップ',
-      sources: ['next-sitemap.js', 'package.json'],
+      sources: ['next-sitemap.config.js', 'package.json'],
       libraries: [
         {
           title: 'next-sitemap',
