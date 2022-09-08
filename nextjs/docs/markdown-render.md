@@ -20,8 +20,8 @@ Tailwind CSS のプラグインにより `prose prose-pre:p-0 dark:prose-invert 
 
 `react-syntax-highlighter` によりコードのハイライトを行っています。必要な言語やテーマをインポートする必要がある点に注意してください。また、言語をJSで分解することでファイル名の表現に対応しています。
 
-```
-\`\`\`js:ファイル名.js
+``````
+```js:ファイル名.js
 const demo = 111;
-\`\`\`
 ```
+``````
