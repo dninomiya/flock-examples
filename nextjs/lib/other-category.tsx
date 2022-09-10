@@ -37,14 +37,14 @@ export const OtherCategory: Category = {
       sources: ['demos/qr.tsx'],
       libraries: [
         {
-          title: 'react-qr-code',
-          url: 'https://www.npmjs.com/package/react-qr-code',
+          title: 'qrcode.react',
+          url: 'https://www.npmjs.com/package/qrcode.react',
         },
       ],
       docs: [
         {
-          title: 'react-qr-code',
-          url: 'https://www.npmjs.com/package/react-qr-code',
+          title: 'qrcode.react',
+          url: 'https://www.npmjs.com/package/qrcode.react',
         },
       ],
     },
